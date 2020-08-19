@@ -59,9 +59,15 @@ provider:
 #    - exclude-me.py
 #    - exclude-me-dir/**
 
+package:
+  exclude:
+    - lambda_dir/exclude_dir/**
+
 functions:
   hello:
     handler: handler_lambda.main
+  hello2:
+    handler: lambda_dir/handler_lambda_two.main
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
