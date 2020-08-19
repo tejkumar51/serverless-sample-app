@@ -11,7 +11,16 @@ services:
       - LAMBDA_EXECUTOR=docker
       - LAMBDA_REMOVE_CONTAINERS=false
       - DOCKER_HOST=unix:///var/run/docker.sock
+      - LOCALSTACK_HOSTNAME=localhost
+      - LAMBDA_DOCKER_NETWORK=localstack-tutorial
     volumes:
       - "${TMPDIR}:/tmp/localstack"
       - "/var/run/docker.sock:/var/run/docker.sock"
+volumes:
+  localstack:
+
+networks:
+  default:
+    external:
+      name: localstack-tutorial
 
