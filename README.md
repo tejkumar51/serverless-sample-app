@@ -44,3 +44,8 @@ https://www.serverlessops.io/blog/aws-lambda-serverless-development-workflow-par
 
 https://localstack.cloud/
 
+
+For s3 unit testing:  https://github.com/vincentclaes/serverless_data_pipeline_example
+
+sample-terraform-locastack
+https://github.com/UlisesGascon/sample-terraform-localstack
